@@ -515,7 +515,7 @@ public abstract class VibrationEffect implements Parcelable {
     public static String effectIdToString(int effectId) {
         switch (effectId) {
             case EFFECT_CLICK:
-                return "CLICK";
+                return "TICK";
             case EFFECT_TICK:
                 return "TICK";
             case EFFECT_HEAVY_CLICK:

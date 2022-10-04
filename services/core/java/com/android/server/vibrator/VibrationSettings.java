@@ -128,7 +128,7 @@ final class VibrationSettings {
                 com.android.internal.R.array.config_clockTickVibePattern);
 
         mFallbackEffects = new SparseArray<>();
-        mFallbackEffects.put(VibrationEffect.EFFECT_CLICK, clickEffect);
+        mFallbackEffects.put(VibrationEffect.EFFECT_CLICK, tickEffect);
         mFallbackEffects.put(VibrationEffect.EFFECT_DOUBLE_CLICK, doubleClickEffect);
         mFallbackEffects.put(VibrationEffect.EFFECT_TICK, tickEffect);
         mFallbackEffects.put(VibrationEffect.EFFECT_HEAVY_CLICK, heavyClickEffect);

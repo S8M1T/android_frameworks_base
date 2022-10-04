@@ -197,6 +197,9 @@ public class UdfpsController implements DozeReceiver {
     public static final VibrationEffect EFFECT_CLICK =
             VibrationEffect.get(VibrationEffect.EFFECT_CLICK);
 
+    public static final VibrationEffect EFFECT_TICK =
+            VibrationEffect.get(VibrationEffect.EFFECT_TICK);
+
     private final ScreenLifecycle.Observer mScreenObserver = new ScreenLifecycle.Observer() {
         @Override
         public void onScreenTurnedOn() {
@@ -724,8 +727,8 @@ public class UdfpsController implements DozeReceiver {
         mVibrator.vibrate(
                 Process.myUid(),
                 mContext.getOpPackageName(),
-                EFFECT_CLICK,
-                "udfps-onStart-click",
+                EFFECT_TICK,
+                "udfps-onStart-tick",
                 VIBRATION_ATTRIBUTES);
         }
     }

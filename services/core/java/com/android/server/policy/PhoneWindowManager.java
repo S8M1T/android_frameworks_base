@@ -6285,7 +6285,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             case HapticFeedbackConstants.EDGE_RELEASE:
             case HapticFeedbackConstants.CONFIRM:
             case HapticFeedbackConstants.GESTURE_START:
-                return VibrationEffect.get(VibrationEffect.EFFECT_CLICK);
+                return VibrationEffect.get(VibrationEffect.EFFECT_TICK);
             case HapticFeedbackConstants.LONG_PRESS:
             case HapticFeedbackConstants.EDGE_SQUEEZE:
                 return VibrationEffect.get(VibrationEffect.EFFECT_HEAVY_CLICK);
@@ -6293,7 +6293,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                 return VibrationEffect.get(VibrationEffect.EFFECT_DOUBLE_CLICK);
 
             case HapticFeedbackConstants.CALENDAR_DATE:
-                return VibrationEffect.get(VibrationEffect.EFFECT_CLICK);
+                return VibrationEffect.get(VibrationEffect.EFFECT_TICK);
             case HapticFeedbackConstants.SAFE_MODE_ENABLED:
                 pattern = mSafeModeEnabledVibePattern;
                 break;
